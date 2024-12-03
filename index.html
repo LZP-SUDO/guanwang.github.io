@@ -1,14 +1,28 @@
 <div class="container">
     <a href="#home">主页</a>
-    <a href="#news">新闻</a>
+    <a href="#chengyuan">成员</a>
     <div class="dropdown">
         <button class="dropbtn" onclick="myFunction()">下拉菜单</button>
         <div class="dropdown-content" id="myDropdown">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
+            <a href="https://shequ.codemao.cn/work/245079391">十五年前的梦 1</a>
+            <a href="https://shequ.codemao.cn/work/234863702">GoastLand幽灵之陆</a>
             <a href="#">Link 3</a>
         </div>
     </div>
+</div>
+<ul class="topnav">
+  <li><a class="active" href="#home">主页</a></li>
+  <li><a href="#shezhi">设置</a></li>
+  <li><a href="#geren">个人</a></li>
+  <li><a href="#about">关于</a></li>
+  <li class="icon">
+    <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
+  </li>
+</ul>
+
+<div style="padding-left:16px">
+  <h2>响应式导航实例</h2>
+  <p>可通过重置浏览器大小查看效果</p>
 </div>
 
 <h3>导航栏中的下拉菜单</h3>
@@ -90,4 +104,7 @@
           }
       }
     }
+    function myFunction() {
+    document.getElementsByClassName("topnav")[0].classList.toggle("responsive");
+}
 </script>
