@@ -1,26 +1,26 @@
-<div class="container">
-    <a href="#home">主页</a>
-    <a href="#chengyuan">成员</a>
-    <a href ="https://shequ.codemao.cn/work/242436879">kitten版官网</a>
-    <div class="dropdown">
-        <button class="dropbtn" onclick="myFunction()">下拉菜单</button>
-        <div class="dropdown-content" id="myDropdown">
-            <a href="https://shequ.codemao.cn/work/245079391">十五年前的梦 1</a>
-            <a href="https://shequ.codemao.cn/work/234863702">GoastLand幽灵之陆</a>
-            <a href="#"></a>
+<!DOCTYPE html>
+<html>
+    <head>
+        html lang="zh-CN">
+    <meta charset=utf-8>
+    <title>影之光工作室官网</title>
+    </head>
+    <body>
+       <ul>
+    <li><a class="active" href="#home">主页</a></li>
+    <li><a href="#chengyuan">成员</a></li>
+    <li class="dropdown">
+        <a href="#" class="dropbtn">作品</a>
+        <div class="dropdown-content">
+            <a href="#">十五年前的梦 1</a>
+            <a href="#">链接 2</a>
+            <a href="#">链接 3</a>
         </div>
-    </div>
-    <li class="right"><a href="#about">关于</a></li>
-</div>
+    </li>
+</ul>
 
-
-<div style="padding-left:16px">
-  <h2>响应式导航实例</h2>
-  <p>可通过重置浏览器大小查看效果</p>
-</div>
-
-<h3>导航栏中的下拉菜单</h3>
-<p>点击按钮显示下拉菜单</p>
+<h3>导航条插入下拉菜单</h3>
+<p>鼠标移动到"下拉菜单"显示列表</p>
 <style>
     ul {
         list-style-type: none;
@@ -72,21 +72,5 @@
         display: block;
     }
 </style>
-
-<script>
-    /* 点击按钮，下拉菜单在 显示/隐藏 之间切换 */
-    function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-    }
-    
-    // 点击下拉菜单意外区域隐藏
-    window.onclick = function(e) {
-      if (!e.target.matches('.dropbtn')) {
-        var myDropdown = document.getElementById("myDropdown");
-          if (myDropdown.classList.contains('show')) {
-            myDropdown.classList.remove('show');
-          }
-      }
-    }
-    
-</script>
+    </body>
+</html>
