@@ -1,77 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-    <html lang="zh-CN">
-    <meta charset=utf-8>
-    <title>影之光工作室官网</title>
-    </head>
-    <body>
-       
+<head>
+<meta charset="utf-8">
+<title>注册表在线立方化组织R·O·C·O（原影之光工作室官网）</title>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+
 <ul>
-    <li><a class="active" href="#home">主页</a></li>
-    <li><a href="#news">新闻</a></li>
-    <li class="dropdown">
-        <a href="#" class="dropbtn">下拉菜单</a>
-        <div class="dropdown-content">
-            <a href="#">链接 1</a>
-            <a href="#">链接 2</a>
-            <a href="#">链接 3</a>
-        </div>
-    </li>
+  <li><a href="#home">主页</a></li>
+  <li><a href="#news">作品</a></li>
+  <li><a href="#contact">联系</a></li>
+  <li style="float:right"><a class="active" href="#about">关于</a></li>
 </ul>
 
-<h3>导航条插入下拉菜单</h3>
-<p>鼠标移动到"下拉菜单"显示列表</p>
-<style>
-    ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: #333;
-    }
-    
-    li {
-        float: left;
-    }
-    
-    li a, .dropbtn {
-        display: inline-block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    
-    li a:hover, .dropdown:hover .dropbtn {
-        background-color: red;
-    }
-    
-    li.dropdown {
-        display: inline-block;
-    }
-    
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f0f8ff;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    }
-    
-    .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-    }
-    
-    .dropdown-content a:hover {background-color: #f0f8ff}
-    
-    .dropdown:hover .dropdown-content {
-        display: block;
-    }
-</style>
-    </body>
+</body>
 </html>
